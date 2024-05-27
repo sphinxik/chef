@@ -236,17 +236,14 @@ body {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  -webkit-transition: -webkit-box-shadow 0.2s ease;
-  transition: -webkit-box-shadow 0.2s ease;
-  -o-transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 @media (pointer: fine) {
   .btn:hover {
-    -webkit-box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.1);
-    box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.1);
+    opacity: 0.75;
   }
 }
 
@@ -297,10 +294,17 @@ body {
 }
 
 .pdfs-item {
+  display: block;
   position: relative;
   -ms-grid-column-span: 1;
   grid-column: 1 span;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .pdfs-item {
+    pointer-events: none;
+  }
 }
 
 .pdfs-item__badge {
@@ -488,17 +492,14 @@ body {
   background: linear-gradient(to bottom, #f67139, #e04c0d);
   -webkit-box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.35);
   box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.35);
-  -webkit-transition: -webkit-box-shadow 0.2s ease;
-  transition: -webkit-box-shadow 0.2s ease;
-  -o-transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 @media (pointer: fine) {
   .wpcf7-form__bottom input[type="submit"]:hover {
-    -webkit-box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.1);
-    box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.1);
+    opacity: 0.75;
   }
 }
 
@@ -632,8 +633,7 @@ body {
 
 @media (pointer: fine) {
   .about-social:hover > .about-social__icon {
-    -webkit-box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.1);
-    box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.1);
+    opacity: 0.75;
   }
 
   .about-social:hover > .about-social__text {
@@ -654,11 +654,9 @@ body {
   background: linear-gradient(to bottom, #f67139, #e04c0d);
   -webkit-box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.35);
   box-shadow: 0 4px 20px 0 rgba(224, 76, 13, 0.35);
-  -webkit-transition: -webkit-box-shadow 0.2s ease;
-  transition: -webkit-box-shadow 0.2s ease;
-  -o-transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .about-social__icon img {
