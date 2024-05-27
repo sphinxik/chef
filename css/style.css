@@ -388,7 +388,7 @@ body {
 
 .pdfs-item__text {
   color: #ffffff;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.2;
 }
 
@@ -844,7 +844,11 @@ body {
   }
 
   .pdfs-item__title {
-    font-size: 24px;
+    font-size: 26px;
+  }
+
+  .pdfs-item__text {
+    font-size: 16px;
   }
 
   .pdfs-form {
